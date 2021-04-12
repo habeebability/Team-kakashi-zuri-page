@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,300;1,400;1,500;1,700&display=swap');
 
 html, body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +19,7 @@ img {
 
 }
 .container {
-  padding: 1rem max(10%, 2rem);
+  padding: 0 max(10%, 2rem);
 }
 .nav-container {
   padding: 1rem max(15%, 2rem);
@@ -124,7 +125,7 @@ nav {
 .card1 {
   background-color: blue;
   border-radius: 2rem;
-  flex: 1 1 6rem;
+  flex: 1 1 3rem;
   z-index: 4;
 }
 /* .card img {
@@ -210,13 +211,88 @@ form {
   font-weight: 500;
   font-size: 20px;
   background-color: royalblue;
-  padding: 1rem 2rem;
+  padding: 1rem ;
   color: white;
   border-radius: 1rem;
 }
 .button-div button{
   display: block;
 }
+
+.abt-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.about-info>h2 span {
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+.about-desc>p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.about-desc > p > a {
+
+  text-decoration: underline;
+}
+.btn-about {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+}
+.btn-about>button {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 1rem 4rem;
+}
+.abt-wrapper>div {
+  flex: 1;
+}
+.abt-wrapper p {
+  text-align: right;
+}
+footer {
+  background-color: rgb(141, 130, 130);
+  
+}
+.link-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  column-gap: 1rem;
+}
+
+footer ul >li > a {
+  color: #fff;
+}
+footer > ul {
+  margin-left: 0;
+}
+
+footer h2 {
+  color: #0468C6;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+/* .ml-auto {
+  margin-left: 0;
+} */
+
+
+
 
 @media (min-width: 768px) {
   .banner-flex {
@@ -254,6 +330,26 @@ form {
     padding: 1rem 5rem;
     color: white;
     border-radius: 1rem;
+  }
+  .card1 {
+    background-color: blue;
+    border-radius: 2rem;
+    flex: 1 1 6rem;
+    z-index: 4;
+  }
+  .about-info>h2 span {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+  }
+  .about-desc>p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .ml-auto {
+    margin-left: auto;
   }
 }
 
