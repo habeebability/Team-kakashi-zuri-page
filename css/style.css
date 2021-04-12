@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+}
+img {
+  max-width: 100%;
+}
+
+*, *::before, *::after{ 
+  list-style: none;
+  box-sizing: inherit;
+  text-decoration: none;
+
+}
+.container {
+  padding: 1rem max(10%, 2rem);
+}
+.nav-container {
+  padding: 1rem max(15%, 2rem);
+}
+
+nav {
+  background: #A6D2F2;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.nav-links {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links a {
+  color: currentColor;
+}
+.tlogo {
+  padding-right: 2rem;
+}
+.ing-logo {
+  padding-right: 1rem;
+}
+.ing4good {
+  margin-right: auto;
+}
+.mr {
+  margin-right: 5rem;
+}
+.banner {
+  border-radius: 0 0 1.5rem 1.5rem;
+  background-color: #0468C6;
+  position: relative;
+}
+.banner::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  mix-blend-mode: overlay;
+  background: url(../img/2251796\ 1.png);
+  border-radius: 0 0 1rem 1rem;
+
+}
+.banner-flex {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem ;
+}
+.banner-flex h1 {
+  font-size: 40px;
+  color: #fff;
+}
+.banner-flex span {
+  display: block;
+}
+.banner-flex p {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 2px;
+  margin-bottom: 5rem;
+}
+.card-container {
+  position: relative;
+}
+
+.cards  {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -5rem;
+  border-radius: 2rem;
+  /* background: #F7F9FA; */
+  
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  flex: 1 1 6rem;
+  border-radius: 0 3rem 3rem 0;
+  border: 1px solid rgba(4, 104, 198, 0.4); 
+  background: #F7F9FA;
+  text-align: center;
+  padding: 6rem;
+  margin-top: 2rem;
+
+}
+
+.card1 {
+  background-color: blue;
+  border-radius: 2rem;
+  flex: 1 1 6rem;
+  z-index: 4;
+}
+/* .card img {
+  margin-left: 3rem;
+} */
+.card3 img {
+  padding-top: 1rem;
+}
+.card1 p {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+.card button {
+  margin-top: .7rem;
+  padding: .5rem 1rem;
+  color: white;
+  background-color: #0468C6;
+}
+.card2 {
+  z-index: 3;
+}
+.card2 img {
+  margin-left: 2.5rem;
+}
+.card3 {
+  z-index: 2;
+}
+.card4 {
+  z-index: 1;
+}
+.form-section {
+  position: relative;
+  background: url(../img/17973908\ 1.png);
+}
+form {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+.reg-link  {
+  display: flex;
+  justify-content: center;
+}
+.reg-link a {
+  text-decoration: underline;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #0468C6;
+}
+.reg-link a:hover {
+  cursor: pointer;
+}
+
+.form-div  {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1rem;
+}
+.form-div input {
+  flex: 1 1 30rem;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #0468C6;
+}
+.form-div input::placeholder {
+  color: rgba(4, 104, 198, 0.5);
+}
+.form-reg {
+  position: absolute;
+  top: 2rem;
+  left: 3.5rem;
+  display: flex;
+  flex: 0;
+  justify-content: center;
+ }
+
+.form-reg h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: royalblue;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 1rem;
+}
+.button-div button{
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .banner-flex {
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem ;
+  }
+  .banner-flex h1 {
+    font-size: 80px;
+    color: #fff;
+  }
+  .container {
+    padding: 1rem max(15%, 5rem);
+  }
+  .nav-container {
+    padding: 1rem max(10%, 5rem);
+  }
+  .card:not(:first-child) {
+    margin-left: -3rem;
+  }
+  .form-reg {
+    position: absolute;
+    top: 3rem;
+    left: 45rem;
+    display: flex;
+    flex: 0;
+    justify-content: center;
+   }
+   .form-reg h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    background-color: royalblue;
+    padding: 1rem 5rem;
+    color: white;
+    border-radius: 1rem;
+  }
+}
+
