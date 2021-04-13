@@ -290,8 +290,9 @@ footer h2 {
 /* .ml-auto {
   margin-left: 0;
 } */
+
 select {
-  width: 37rem;
+  width: 100%;
   border-radius: 10px;
   padding: 1rem;
   border: 1px solid #0468C6;
@@ -357,6 +358,14 @@ select {
   }
   .ml-auto {
     margin-left: auto;
+  }
+  select {
+    width: 37rem;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid #0468C6;
+    background-color: none;
+    color: #0468C6;
   }
 }
 
